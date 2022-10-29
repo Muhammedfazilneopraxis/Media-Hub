@@ -22,12 +22,8 @@ function App() {
             <Navbar />
             <div className="w-96 bg-[#F2EBE1]">
               <Routes>
-                <Route path="/" element={<Home />} />
                 <Route path="/upload" element={<Uploads />} />
                 <Route path="/apps" element={<Apps />} />
-                <Route path="/theme" element={<Home />} />
-                <Route path="/settings" element={<Home />} />
-                <Route path="/users" element={<Home />} />
               </Routes>
             </div>
             <Body />

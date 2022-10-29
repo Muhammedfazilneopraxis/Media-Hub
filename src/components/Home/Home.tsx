@@ -1,10 +1,11 @@
 import React from 'react';
 import img from '../../images/commingsoon.png'
+import s from '../Body/Body.module.css'
 
 function Home() {
     return (
-        <div className="w-full h-full bg-[#F2EBE1]">
-            <h1>Comeing soon....</h1>
+        <div>
+             <img src={img}  className='h-full aspect-video m-auto overflow-hidden object-cover' />
         </div>
     );
 }
