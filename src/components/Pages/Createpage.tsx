@@ -1,5 +1,4 @@
-
-import p from './Pages.module.css'
+import s from './Pages.module.css'
 
 
 type MultipleSelection = {
@@ -13,23 +12,21 @@ type Options = {
 }
 
 const Pages = () => {
-
     var choices: MultipleSelection[] = [
         { label: "Content type", options: [{ name: "Video" }, { name: "Image" }, { name: "Docs" },] },
         { label: "Choose who can upload", options: [{ name: "My users" }, { name: "Only me" }, { name: "My staff", disabled: true },] },
-        { label: "Choose template", options: [{ name: "Default" }, { name: "Template 1", disabled: true }, { name: "Template 2", disabled: true },] },
+        { label: "Choose template", options: [{ name: "Default"}, { name: "Template 1", disabled: true }, { name: "Template 2", disabled: true },] },
     ]
 
     return (
-        <div className={p.container}>
+        <div className={s.container}>
             <form>
                 <label className="block">
-                    <span className={p.inputlabel}>Title</span>
-                    <input type="text" name="title" className={p.inputbox} placeholder="Enter your title" />
+                    <span className={s.inputlabel}>Title</span>
+                    <input type="text" name="title" className={s.inputbox} placeholder="Enter your title" />
                 </label>
-                <label className={p.inputlabel}>Description</label>
-                <textarea rows={8} className={p.textarea} placeholder="Describe your page here,these will shown for your users while they are browsing these page......"></textarea>
-
+                <label className={s.inputlabel}>Description</label>
+                <textarea rows={8} className={s.textarea} placeholder="Describe your page here,these will shown for your users while they are browsing these page......"></textarea>
                 <div>
                     <table className="table-fixed w-full h-36">
                         <tbody>
