@@ -1,6 +1,8 @@
 import HeadSection from '../HeadSection'
 import s from './Body.module.css'
 import img from '../../images/commingsoon.png'
+import GoogleLoginButton from '../SocialButton/GoogleLoginButton'
+
 
 const Body = ({ children }: any) => {
     return (
@@ -18,9 +20,7 @@ const Body = ({ children }: any) => {
                     </div>
                 </div>
                 <div className='bg-slate-200 flex flex-col justify-center'>
-                    <button className="bg-red-700 mx-7 text-white font-bold py-2 px-4 rounded-full ">
-                        Sign in with Google
-                    </button>
+                    <GoogleLoginButton />
                 </div>
             </div>
             {/* </div> */}
