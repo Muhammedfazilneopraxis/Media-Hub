@@ -1,7 +1,6 @@
 import HeadSection from '../HeadSection'
 import s from './Body.module.css'
 import img from '../../images/commingsoon.png'
-import GoogleLoginButton from '../SocialButton/GoogleLoginButton'
 import BussinessLogin from '../BussinessLogin/BussinessLogin'
 
 

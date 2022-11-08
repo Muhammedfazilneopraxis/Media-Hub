@@ -1,9 +1,9 @@
-import {GoogleLoginButton} from "react-social-login-buttons";
+import { GoogleLoginButton } from "react-social-login-buttons";
 
 const GoogleButton = () => {
-    return(
+    return (
         <>
-        <GoogleLoginButton onClick={() => alert("first")} />
+            <GoogleLoginButton onClick={() => alert("first")} />
         </>
     );
 }
