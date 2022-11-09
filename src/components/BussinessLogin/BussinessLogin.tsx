@@ -1,4 +1,4 @@
-import GoogleLoginButton from '../SocialButton/GoogleLoginButton'
+import GoogleButton from '../SocialButton/GoogleLoginButton'
 import FacebookLoginButton from '../SocialButton/FacebookLoginButton'
 import TwitterLoginButton from '../SocialButton/TwitterLoginButton';
 import Center from '../Common/Center';
@@ -13,9 +13,9 @@ const BussinessLogin = () => {
                 </div>
             </div>
             <Center className='bg-slate-200 flex flex-col '>
-                <GoogleLoginButton />
-                <FacebookLoginButton />
-                <TwitterLoginButton />
+                <GoogleButton />
+                {/* <FacebookLoginButton /> */}
+                {/* <TwitterLoginButton /> */}
             </Center>
         </div>
     )
