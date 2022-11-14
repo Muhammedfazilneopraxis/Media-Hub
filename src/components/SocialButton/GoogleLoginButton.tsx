@@ -1,26 +1,30 @@
 // refered for google login https://blog.logrocket.com/guide-adding-google-login-react-app/ 
 
 // import modules for google login 
-import { GoogleLogin} from 'react-google-login';
+import { GoogleLogin } from 'react-google-login';
 import { gapi } from 'gapi-script';
-import React, { useEffect } from 'react';
-import {GoogleLoginButton} from "react-social-login-buttons";
+import React, { useEffect, useState } from 'react';
+import LoginMessage from '../BussinessLogin/LoginMesage';
+import { Link, Route, Routes } from 'react-router-dom';
+
 
 function GoogleButton() {
- 
-  // client id created in google developer console
-  const clientId = '658619845650-jpk8djppv8jjiu5c5pumivcbgb97phgi.apps.googleusercontent.com'
- 
+  // const [isShown, setIsShown] = useState(false);
+
+  // client id for google login
+  const clientId = '658619845650-g4kbf7n1lsoduknosfk0gs317rev14fn.apps.googleusercontent.com'
+
   //when the response success 
   const onSuccess = (res: any) => {
-    console.log('success',res)
+    // setIsShown(true);
+    console.log('success', res)
   };
 
   //when the response failure 
   const onFailure = (err: any) => {
+    alert('Login failed..')
     console.log('failed:', err);
   };
-
 
   useEffect(() => {
     const initClient = () => {
@@ -34,15 +38,18 @@ function GoogleButton() {
 
   return (
     <div>
-      <GoogleLogin
-        clientId={clientId}
-        buttonText="Sign in with Google"
-        onSuccess={onSuccess}
-        onFailure={onFailure}
-        cookiePolicy={'single_host_origin'}
-        isSignedIn={true}
-      />
-  </div>
+        <GoogleLogin
+          clientId={clientId}
+          buttonText="Sign in with Google"
+          onSuccess={onSuccess}
+          onFailure={onFailure}
+          cookiePolicy={'single_host_origin'}
+          isSignedIn={false}
+        />
+      {/* 👇️ show component on click */}
+      {/* {isShown && <LoginMessage />} */}
+
+    </div>
   );
 }
 

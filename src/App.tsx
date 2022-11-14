@@ -11,6 +11,7 @@ import {
 
 import Apps from "./components/Apps/Apps";
 import Home from "./components/Home/Home";
+import LoginMessage from "./components/BussinessLogin/LoginMesage";
 
 
 function App() {
@@ -21,14 +22,14 @@ function App() {
           <Layout>
             <Navbar />
             <div className="w-96 bg-[#F2EBE1]">
-              <Routes>
-                <Route path="/" element={<Apps />} />
+              {/* <Routes> */}
+                {/* <Route path="/" element={<Apps />} /> */}
                 {/* <Route path="/upload" element={<Uploads />} />
                 <Route path="/apps" element={<Apps />} />
                 <Route path="/theme" element={<Home />} />
                 <Route path="/settings" element={<Home />} />
                 <Route path="/users" element={<Home />} /> */}
-              </Routes>
+              {/* </Routes> */}
             </div>
             <Body />
           </Layout>

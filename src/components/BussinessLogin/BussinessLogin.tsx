@@ -1,7 +1,6 @@
 import GoogleButton from '../SocialButton/GoogleLoginButton'
-import FacebookLoginButton from '../SocialButton/FacebookLoginButton'
-import TwitterLoginButton from '../SocialButton/TwitterLoginButton';
 import Center from '../Common/Center';
+import { Link } from 'react-router-dom';
 
 const BussinessLogin = () => {
     return (
@@ -12,10 +11,8 @@ const BussinessLogin = () => {
                     <p>Bussiness can share medias with the bussiness customer and customer can share medias to the bussiness</p>
                 </div>
             </div>
-            <Center className='bg-slate-200 flex flex-col '>
-                <GoogleButton />
-                {/* <FacebookLoginButton /> */}
-                {/* <TwitterLoginButton /> */}
+            <Center className='bg-slate-200 flex flex-col'>
+                    <GoogleButton />
             </Center>
         </div>
     )
