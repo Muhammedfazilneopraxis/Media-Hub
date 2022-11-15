@@ -2,16 +2,11 @@ import Body from "./components/Body";
 import Card from "./components/Card";
 import Layout from "./components/Layout";
 import Navbar from "./components/Navbar";
-import Uploads from "./components/Uploads/Uploads";
 import {
   BrowserRouter,
-  Routes,
-  Route,
 } from 'react-router-dom'
 
-import Apps from "./components/Apps/Apps";
-import Home from "./components/Home/Home";
-import LoginMessage from "./components/BussinessLogin/LoginMesage";
+
 
 
 function App() {

@@ -4,11 +4,10 @@ import img from '../../images/commingsoon.png'
 import BussinessLogin from '../BussinessLogin/BussinessLogin'
 import LoginMessage from '../BussinessLogin/LoginMesage'
 import {
-    BrowserRouter,
     Routes,
     Route,
   } from 'react-router-dom'
-import Pages from '../Pages/Createpage'
+
   
 
 const Body = ({ children }: any) => {
