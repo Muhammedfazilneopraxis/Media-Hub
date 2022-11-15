@@ -23,7 +23,7 @@ const Body = ({ children }: any) => {
                 </Route>
                 <Route path='/login' element ={<LoginMessage />}></Route>
             </Routes>
-            {/* <LoginMessage /> */}
+
             
             {/* </div> */}
         </div>
