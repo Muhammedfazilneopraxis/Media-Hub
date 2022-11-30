@@ -1,6 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { getFirestore } from "firebase/firestore";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
+import { Navigate as navigate, redirect } from "react-router-dom";
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyDPSQn-vvnhEVN2tY8AiTl6ifEjii6jig4",
@@ -13,27 +16,46 @@ const firebaseConfig = {
 };
 
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-export const auth = getAuth(app);
+export const Firebase = initializeApp(firebaseConfig);
+export const analytics = getAnalytics(Firebase);
+export const db = getFirestore(Firebase);
+export const auth = getAuth(Firebase);
 
+// auth.currentUser // null
+
+let userlogged = auth.currentUser;
+console.log('Current user name is:', userlogged);
 
 const provider = new GoogleAuthProvider()
 
-export const signInWithGoogle = () => {
+
+
+export const login = () => {
+ 
     signInWithPopup(auth, provider).then((result) => {
         console.log(result)
-        const name = result.user.displayName;
-        const email = result.user.email;
-        const profilepic = result.user.photoURL;
-        console.log(name, email, profilepic)
-
-        // storeing to the local storage
-        localStorage.setItem("name", name)
-        localStorage.setItem("email", email)
-        localStorage.setItem("profilepic", profilepic)
+        // let userName = result.user.displayName;
     }).catch((err) => {
         console.log(err)
     })
 };
+
+
+export const logout = () => {
+    signOut(auth).then((res) => {
+        console.log('sign out successfully', res)
+    }).catch((error) => {
+        console.log('error while sign out', error)
+    });
+};
+
+
+
+
+
+
+
+
+
+
 

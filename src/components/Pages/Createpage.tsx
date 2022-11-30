@@ -13,6 +13,7 @@ type Options = {
 }
 
 const Pages = () => {
+    
 
     var choices: MultipleSelection[] = [
         { label: "Content type", options: [{ name: "Video" }, { name: "Image" }, { name: "Docs" },] },

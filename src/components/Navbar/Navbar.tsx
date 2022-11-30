@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import HeadSection from '../HeadSection'
 import s from './Navbar.module.css'
 
@@ -18,8 +17,8 @@ const Navbar = ({ children }: any) => {
                 </Link>
                 <Link to='/apps'>
                    <NavItem name="Apps" iconUrl="./Icons/navbar/book.svg" />
-                </Link>
-                <Link to='/theme'>
+                </Link> */}
+                {/* <Link to='/theme'>
                     <NavItem name="Theme" iconUrl="./Icons/navbar/colorswatch.svg" />
                 </Link>
                 <Link to='/settings'>
