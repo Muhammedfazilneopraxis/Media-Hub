@@ -15,8 +15,9 @@ function App() {
       <BrowserRouter>
         <Card>
           <Layout>
-            <Navbar />
-            <div className="w-96 bg-[#F2EBE1]">
+            {/* <Navbar /> */}
+            {/* <div className="w-96 bg-[#F2EBE1]"> */}
+            <div>
               {/* <Routes> */}
                 {/* <Route path="/" element={<Apps />} /> */}
                 {/* <Route path="/upload" element={<Uploads />} />

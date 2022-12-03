@@ -2,7 +2,7 @@ import HeadSection from '../HeadSection'
 import s from './Body.module.css'
 import img from '../../images/commingsoon.png'
 import BussinessLogin from '../BussinessLogin/BussinessLogin'
-import LoginMessage from '../BussinessLogin/LoginMesage'
+
 import {
     Routes,
     Route,
@@ -21,7 +21,6 @@ const Body = ({ children }: any) => {
             <Routes>
                 <Route path='/' element={<BussinessLogin />}> 
                 </Route>
-                <Route path='/login' element ={<LoginMessage />}></Route>
             </Routes>
 
             
