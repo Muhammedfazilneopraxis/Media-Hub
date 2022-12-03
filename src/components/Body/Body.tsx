@@ -1,6 +1,6 @@
-import HeadSection from '../HeadSection'
+// import HeadSection from '../HeadSection'
 import s from './Body.module.css'
-import img from '../../images/commingsoon.png'
+// import img from '../../images/commingsoon.png'
 import BussinessLogin from '../BussinessLogin/BussinessLogin'
 
 import {
