@@ -1,7 +1,7 @@
 import Body from "./components/Body";
 import Card from "./components/Card";
 import Layout from "./components/Layout";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import {
   BrowserRouter,
 } from 'react-router-dom'

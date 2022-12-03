@@ -1,5 +1,5 @@
 .rootContainer {
-    @apply w-16 h-full flex;
+    @apply w-16 h-full flex ;
     flex-flow: column;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .navbody {
-    @apply flex-grow flex justify-center flex-col text-xs font-bold ;
+    @apply flex-grow flex justify-center flex-col text-xs font-bold  ;
     flex-grow: 1;
 }
 
