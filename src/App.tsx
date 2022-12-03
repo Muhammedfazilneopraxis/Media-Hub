@@ -11,7 +11,7 @@ import {
 
 function App() {
   return (
-    <div className="w-full h-full bg-[#F2EBE1] p-10">
+    <div className="w-full h-full sm:bg-white lg:bg-[#F2EBE1] p-10 ">
       <BrowserRouter>
         <Card>
           <Layout>
